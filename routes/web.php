@@ -21,11 +21,27 @@ use Illuminate\Support\Facades\Route;
 //Backend 
 Route::middleware('role:admin')->group(function(){
 
-Route::get('dashboard','BackendController@dashboard')->name('dashboard');
-
+Route::get('/dashboard','BackendController@dashboard')->name('dashboard');
 Route::resource('movies','MovieController');
 
 Route::resource('user','UserController');
 
 });
-//End Backend
+
+//Frontend
+Route::get('/','FrontendController@home')->name('homepage');
+Route::get('payment','FrontendController@payment')->name('paymentpage');
+Route::get('about','FrontendController@about')->name('aboutpage');
+Route::get('seat','FrontendController@seat')->name('seatpage');
+Route::get('booking','FrontendController@booking')->name('bookingpage');
+
+
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
