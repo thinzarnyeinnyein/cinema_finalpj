@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
+
 <html>
 <head>
 	<title></title>
@@ -16,7 +16,7 @@
 	<nav class="navbar navbar-expand-lg navcolor sticky-top">
 		<a class="navbar-brand" href="index.html">
 			<img src="images/logo1.png" width="50" height="50">
-=======
+
 <html lang="en">
 <head>
 	<title></title>
@@ -40,12 +40,12 @@
 	<nav class="navbar navbar-expand-lg navcolor sticky-top">
 		<a class="navbar-brand" href="{{route('homepage')}}">
 			<img src="{{asset('frontend/images/logo1.png')}}" width="50" height="50">
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
+
 		</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-<<<<<<< HEAD
+
 					<a class="nav-link txtcolor" href="index.html"><b>Home</b></a>
 				</li>
 				<li class="nav-item">
@@ -60,7 +60,7 @@
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<a class="nav-link txtcolor" href="#">
-=======
+
 					<a class="nav-link txtcolor" href="{{route('homepage')}}"><b>Home</b></a>
 				</li>
 				<li class="nav-item">
@@ -75,7 +75,7 @@
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
 				<a class="nav-link txtcolor" href="{{route('paymentpage')}}">
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
+
 					<i class="fab fa-amazon-pay fa-2x"></i>
 				</a>
 				<a href="" class="btn btn-warning btn-sm my-2 my-sm-0">
@@ -85,13 +85,11 @@
 		</div>
 	</nav>
 
-<<<<<<< HEAD
+
 	<!-- Footer -->
-=======
 	@yield('content')
 
 <!-- Footer -->
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
 <footer class="page-footer font-small mdb-color pt-4 foot_color">
 
   <!-- Footer Links -->
@@ -230,12 +228,9 @@
 	<script type="text/javascript" src="{{asset('frontend/bootstrap/js/jquery.min.js')}}">
 	</script>
 	<script type="text/javascript" src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>	
-<<<<<<< HEAD
   	{{-- <script type="text/javascript" src="js/seat.js"></script> --}}
-=======
   <scipt rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/js/all.min.js')}}"></scipt>
   {{-- @yield('script')	 --}}
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
 
 </body>
 </html>
