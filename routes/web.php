@@ -18,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 // });
 //Backend 
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
+
+
+
+
+//Frontend
+Route::get('/','FrontendController@home')->name('homepage');
