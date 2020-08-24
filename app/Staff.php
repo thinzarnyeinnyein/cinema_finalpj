@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
+class Staff extends Model
 {
     protected $fillable = [
-        'name','duration', 'language','photo','start_date','end_date'
+        'name','email', 'email_verified_at','password','remember_token'
     ];
 }

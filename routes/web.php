@@ -16,5 +16,16 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+
 //Backend 
+Route::middleware('role:admin')->group(function(){
+
 Route::get('dashboard','BackendController@dashboard')->name('dashboard');
+
+Route::resource('movies','MovieController');
+
+Route::resource('user','UserController');
+
+});
+//End Backend

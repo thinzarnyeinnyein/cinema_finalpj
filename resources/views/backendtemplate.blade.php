@@ -46,9 +46,14 @@
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{route('user.index')}}">
           <i class="fas fa-user-shield"></i>
           <span>Staff</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{route('movies.index')}}">
+          <i class="fas fa-user-shield"></i>
+          <span>Movie</span></a>
       </li>
 
       <li class="nav-item active">
