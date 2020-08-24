@@ -1,8 +1,11 @@
 @extends('backendtemplate')
+
 @section('content')
 
-<div class="container">
-	<h2>Hello Dashboard</h2>
-	
-</div>
-@endsection
+		<!-- Begin Page Content -->
+        <div class="container-fluid">
+        	<h2>Hello Dashboard</h2>
+        </div>
+        <!-- /.container-fluid -->
+
+@endsection  

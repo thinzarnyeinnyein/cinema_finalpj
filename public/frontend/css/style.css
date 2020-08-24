@@ -1,0 +1,52 @@
+.navcolor{
+	background-image: linear-gradient(to right, #030724, #051c7d);
+}
+
+.txtcolor{
+	color: white;
+	text-decoration: none;
+	margin-left: 40px;
+	font-family: "great";
+	font-size: 24px;
+}
+
+@font-face{
+
+	src:url("Playball/Playball-Regular.ttf");
+	font-family: "great";
+}
+
+.foot_color{
+	
+	background-image: linear-gradient(to right, #04091f, #030724, #051c7d);
+}
+.foot_text{
+	color: white;
+}
+
+.linerarg{
+	
+	background-image: linear-gradient(to right, #04091f, #030724, #051c7d);
+
+}
+
+
+
+/*payment*/
+.pay{
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px #c98d2c;
+}
+
+.cardstyle1:hover,
+.cardstyle2:hover,
+.cardstyle3:hover,
+.cardstyle4:hover,
+.cardstyle5:hover,
+.cardstyle6:hover{
+	color: #c98d2c;
+	transform: translate(7px,-7px);
+	transition-duration: .5s;
+}
+
