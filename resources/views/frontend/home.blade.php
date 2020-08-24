@@ -11,19 +11,19 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="images/c8.jpg" class="d-block" width="1280" height="550" alt="...">
+					<img src="{{asset('frontend/images/c8.jpg')}}" class="d-block" width="1280" height="550" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images/c1.jpg" class="d-block" width="1280" height="550" alt="...">
+					<img src="{{asset('frontend/images/c1.jpg')}}" class="d-block" width="1280" height="550" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="images/c4.jpg" class="d-block" width="1280" height="550" alt="...">
+					<img src="{{asset('frontend/images/c4.jpg')}}" class="d-block" width="1280" height="550" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						
 					</div>
@@ -144,3 +144,9 @@
   </div>
 
 @endsection
+
+{{-- @section('script')
+<script type="text/javascript" src="{{asset('frontend/js/script.js')}}"></script>
+
+
+@endsection --}}

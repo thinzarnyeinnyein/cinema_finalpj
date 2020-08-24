@@ -3,43 +3,43 @@
 <head>
 	<title></title>
 
-	<link rel="icon"  href="images/logo1.png">
+	<link rel="icon"  href="{{asset('frontend/images/logo1.png')}}">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
+	{{-- <meta name="description" content="">
 	<meta name="author" content="">
-	<meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
 	
 	<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/style.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('frontend/bootstrap/bootstrap.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/all.min.css')}}">
-	<scipt rel="stylesheet" type="text/css" href="{{asset('frontend/bootstrap/js/all.min.js')}}"></scipt>
+	<link rel="stylesheet" type="text/css" href="{{asset('frontend/bootstrap/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/css/all.min.css')}}">
+	
 </head>
 <body class="linerarg">
 	
 	<!-- Navagitation -->
 	<nav class="navbar navbar-expand-lg navcolor sticky-top">
-		<a class="navbar-brand" href="index.html">
-			<img src="images/logo1.png" width="50" height="50">
+		<a class="navbar-brand" href="{{route('homepage')}}">
+			<img src="{{asset('frontend/images/logo1.png')}}" width="50" height="50">
 		</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link txtcolor" href="index.html"><b>Home</b></a>
+					<a class="nav-link txtcolor" href="{{route('homepage')}}"><b>Home</b></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link txtcolor" href="seat.html"><b>Seat</b></a>
+					<a class="nav-link txtcolor" href="{{route('seatpage')}}"><b>Seat</b></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link txtcolor" href="booking.html"><b>Booking</b></a>
+					<a class="nav-link txtcolor" href="{{route('bookingpage')}}"><b>Booking</b></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link txtcolor" href="about.html"><b>About</b></a>
+					<a class="nav-link txtcolor" href="{{route('aboutpage')}}"><b>About</b></a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-				<a class="nav-link txtcolor" href="payment.html">
+				<a class="nav-link txtcolor" href="{{route('paymentpage')}}">
 					<i class="fab fa-amazon-pay fa-2x"></i>
 				</a>
 				<a href="" class="btn btn-warning btn-sm my-2 my-sm-0">
@@ -189,7 +189,9 @@
 
 	<script type="text/javascript" src="{{asset('frontend/bootstrap/js/jquery.min.js')}}">
 	</script>
-	<script type="text/javascript" src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>		
+	<script type="text/javascript" src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>	
+  <scipt rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/js/all.min.js')}}"></scipt>
+  {{-- @yield('script')	 --}}
 
 </body>
 </html>

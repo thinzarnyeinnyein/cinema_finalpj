@@ -28,14 +28,20 @@ Route::resource('user','UserController');
 
 });
 
-
-
-
-
-
 //Frontend
 Route::get('/','FrontendController@home')->name('homepage');
+Route::get('payment','FrontendController@payment')->name('paymentpage');
+Route::get('about','FrontendController@about')->name('aboutpage');
+Route::get('seat','FrontendController@seat')->name('seatpage');
+Route::get('booking','FrontendController@booking')->name('bookingpage');
 
 
 
 
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
