@@ -21,7 +21,13 @@ use Illuminate\Support\Facades\Route;
 //Backend 
 Route::middleware('role:admin')->group(function(){
 
-Route::get('dashboard','BackendController@dashboard')->name('dashboard');
+Route::get('/dashboard','BackendController@dashboard')->name('dashboard');
+Route::resource('movies','MovieController');
+
+Route::resource('user','UserController');
+
+});
+
 
 
 
@@ -29,10 +35,7 @@ Route::get('dashboard','BackendController@dashboard')->name('dashboard');
 
 //Frontend
 Route::get('/','FrontendController@home')->name('homepage');
-Route::resource('movies','MovieController');
 
-Route::resource('user','UserController');
 
-});
-//End Backend
+
 
