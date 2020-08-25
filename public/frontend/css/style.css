@@ -15,6 +15,210 @@
 	font-size: 24px;
 
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#animate:hover{
+	
+	transform: translate(5px,-5px);
+	transition-duration: .3s;
+
+}
+/*logo animation*/
+/*body {background:#2b9090;}*/
+.logo {
+  display: block;
+  width: 60px;
+  height: 50px;
+  margin: 20px auto;
+}
+.snow {
+	position: absolute;
+	display: block;
+	width: 70px;
+	top:0;
+	left: 3%;
+}
+.flake1 {
+	position: relative;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.flake2 {
+	position: relative;
+	left:5px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.7s;
+	animation-delay:0.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.flake3 {
+	position: relative;
+	left:-10px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.3s;
+	animation-delay:0.4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.flake4 {
+	position: relative;
+	left:25px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.7s;
+	animation-delay:0s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.flake5 {
+	position: relative;
+	left:-25px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.4s;
+	animation-delay:1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+  
+}
+.flake6 {
+	position: relative;
+	left:9px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.7s;
+	animation-delay:1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.flake7 {
+	position: relative;
+	left:-15px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.2s;
+	animation-delay:1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.flake8 {
+	position: relative;
+	left:35px;
+	width:2px;
+	height:2px;
+	background: white;
+	opacity: 0;
+	transform-origin:0px 0px;
+	animation-name: Snow;
+	animation-duration:2.7s;
+	animation-delay:1.4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+@keyframes Snow {
+0% {
+transform:translateY(0px);
+  opacity:0;
+}
+50% {
+  transform:translateY(25px);
+  opacity: 1;
+}
+  100% {
+  transform:translateY(45px);
+  opacity: 0.3;
+}
+}
+/*sign in*/
+
+.sign_in{
+  display: block;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+ 
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+.sign_in:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  /*background: #ff003b;*/
+  background: #fac507;
+  transition: all .35s;
+}
+
+.sign_in:hover{
+  color: #fff;
+}
+
+.sign_in:hover:after{
+  width: 100%;
+}
+
+=======
+>>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
+>>>>>>> 04134e3b56a222e047283323ce16a746bf177735
+>>>>>>> 59bb921f1803dfc51c122769e8e5df3b768c5fc2
 
 @font-face{
 
@@ -23,12 +227,27 @@
 }
 
 .foot_color{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	background-color: #191b1c;
+=======
+<<<<<<< HEAD
+>>>>>>> 59bb921f1803dfc51c122769e8e5df3b768c5fc2
 	
 	background-image: linear-gradient(to right, #04091f, #030724, #051c7d);
 	background-color: #21294a;
+<<<<<<< HEAD
+=======
+>>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
+>>>>>>> 04134e3b56a222e047283323ce16a746bf177735
+>>>>>>> 59bb921f1803dfc51c122769e8e5df3b768c5fc2
 }
 .foot_text{
 	color: white;
+	font-family: "great";
+	font-size: 18px;
+
 }
 
 .linerarg{
@@ -52,6 +271,12 @@ a.change_color{
 	text-align: center;
 	text-shadow: 2px 2px #c98d2c;
 }
+.card_change:hover{
+	transform: translate(7px,-7px);
+	transition-duration: .5s;
+
+}
+
 
 .cardstyle1:hover,
 .cardstyle2:hover,
@@ -151,6 +376,7 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 }
+<<<<<<< HEAD
 
 /*about*/
 
@@ -227,3 +453,14 @@ body{
 .box{
 	pointer: cursor;
 }
+=======
+<<<<<<< HEAD
+
+/*seat color*/
+.change_color:active{
+		background-color: green;
+}
+=======
+>>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
+>>>>>>> 04134e3b56a222e047283323ce16a746bf177735
+>>>>>>> 59bb921f1803dfc51c122769e8e5df3b768c5fc2

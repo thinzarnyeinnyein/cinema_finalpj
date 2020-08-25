@@ -44,6 +44,11 @@ $(document).ready(function(){
 		// alert(name);
 			
 		//}
+
+
+	// $('#myform').on('click','#btn',function(){
+		
+	// })
 	$('.submit').click(function(){
 		var date = $('.dateone').val();
 		// var hall = $('option:selected',this).data("name");

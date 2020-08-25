@@ -9,7 +9,7 @@ class FrontendController extends Controller
 {
    public function home($value=''){
 
-    	$movies = Movie::all();
+    	$movies = Movie::orderBy('id','desc')->take(8)->get();
         
     	// dd($items);
     	return view('frontend.home',compact('movies'));
@@ -22,7 +22,10 @@ class FrontendController extends Controller
 
     	return view('frontend.about');
     }
-    public function seat($value=''){
+    public function seat(Request $request){
+        
+
+
 
     	return view('frontend.seat');
     }

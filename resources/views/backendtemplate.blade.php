@@ -32,7 +32,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-video"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Cineam</div>
+        <div class="sidebar-brand-text mx-3">Cinema</div>
       </a>
 
       <!-- Divider -->
@@ -57,7 +57,7 @@
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{route('seats.index')}}">
           <i class="fas fa-chair"></i>
           <span>Seat</span></a>
       </li>

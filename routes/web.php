@@ -19,14 +19,21 @@ use Illuminate\Support\Facades\Route;
 
 
 //Backend 
-Route::middleware('role:admin')->group(function(){
+// Route::middleware('role:admin')->group(function(){
 
 Route::get('/dashboard','BackendController@dashboard')->name('dashboard');
 Route::resource('movies','MovieController');
 
 Route::resource('user','UserController');
 
-});
+Route::resource('booking','BookingController');
+
+Route::resource('seats','SeatController');
+
+Route::resource('theater','TheaterController');
+
+
+// });
 
 //Frontend
 Route::get('/','FrontendController@home')->name('homepage');
