@@ -27,9 +27,10 @@ class MovieController extends Controller
      */
     public function create()
     {
-         $movies=Movie::all();
+         //$movies=Movie::all();
          // dd($movies);
-         return view('backend.movies.create',compact('movies'));
+        
+         return view('backend.movies.create');
     }
 
     /**

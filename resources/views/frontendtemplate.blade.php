@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title>Sakura Cinema</title>
 
 	<link rel="icon"  href="{{asset('frontend/images/logo1.png')}}">
 	<meta charset="utf-8">
@@ -21,30 +21,40 @@
 	<!-- Navagitation -->
 	<nav class="navbar navbar-expand-lg navcolor sticky-top">
 		<a class="navbar-brand" href="{{route('homepage')}}">
-			<img src="{{asset('frontend/images/logo1.png')}}" width="50" height="50">
+			{{-- <img src="{{asset('frontend/images/logo1.png')}}" width="60" height="60"> --}}
+      <img class="logo" src="{{asset('frontend/images/logo1.png')}}" width="50" height="50">
+      <div class="snow">
+        <div class="flake1"></div>
+        <div class="flake2"></div>
+        <div class="flake3"></div>
+        <div class="flake4"></div>
+        <div class="flake5"></div>
+        <div class="flake6"></div>
+        <div class="flake7"></div>
+        <div class="flake8"></div>
+      </div>
 		</a>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link txtcolor" href="{{route('homepage')}}"><b>Home</b></a>
+					<a class="nav-link txtcolor" id="animate" href="{{route('homepage')}}"><b>Home</b></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link txtcolor" href="{{route('seatpage')}}"><b>Seat</b></a>
+					<a class="nav-link txtcolor" id="animate" href="{{route('seatpage')}}"><b>Seat</b></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link txtcolor" href="{{route('bookingpage')}}"><b>Booking</b></a>
+					<a class="nav-link txtcolor" id="animate" href="{{route('bookingpage')}}"><b>Booking</b></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link txtcolor" href="{{route('aboutpage')}}"><b>About</b></a>
+					<a class="nav-link txtcolor" id="animate" href="{{route('aboutpage')}}"><b>About</b></a>
 				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-				<a class="nav-link txtcolor" href="{{route('paymentpage')}}">
+				<a class="nav-link txtcolor" id="animate" href="{{route('paymentpage')}}">
 					<i class="fab fa-amazon-pay fa-2x"></i>
 				</a>
-				<a href="" class="btn btn-warning btn-sm my-2 my-sm-0">
-					Sign in
-				</a>
+				
+        <a href="#" class=" btn btn-primary  sign_in"><span>Sign in</span></a>  
 			</form>
 		</div>
 	</nav>
@@ -63,9 +73,7 @@
       <!-- Grid column -->
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold foot_text">Company name</h6>
-        <p class="foot_text">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
+        <p class="foot_text"> Sakura Cinema is a UK-based DVD-by-mail company which specialises in world and arthouse cinema but also caters for mainstream tastes as well with over 80,000 titles films and 5000+ Blu-ray high definition titles available.</p>
       </div>
       <!-- Grid column -->
 
@@ -75,16 +83,16 @@
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold foot_text">Products</h6>
         <p>
-          <a href="#!" class="foot_text">MDBootstrap</a>
+          <a href="#!" class="foot_text">Tech Shop</a>
         </p>
         <p>
-          <a href="#!" class="foot_text">MDWordPress</a>
+          <a href="#!" class="foot_text">E-commerce</a>
         </p>
         <p>
-          <a href="#!" class="foot_text">BrandFlow</a>
+          <a href="#!" class="foot_text">Moblie Shop</a>
         </p>
         <p>
-          <a href="#!" class="foot_text">Bootstrap Angular</a>
+          <a href="#!" class="foot_text">New Website</a>
         </p>
       </div>
       <!-- Grid column -->
@@ -139,7 +147,7 @@
         <!--Copyright-->
         <p class="text-center text-md-center foot_text">© Design by:
           <a href="https://mdbootstrap.com/">
-            <strong>Excellent</strong>
+            <strong>Sakura</strong>
           </a>
         </p>
 
@@ -191,7 +199,8 @@
 	</script>
 	<script type="text/javascript" src="{{asset('frontend/bootstrap/js/bootstrap.bundle.min.js')}}"></script>	
   <scipt rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/js/all.min.js')}}"></scipt>
-  {{-- @yield('script')	 --}}
+  <script type="text/javascript" src="{{asset('frontend/js/script.js')}}"></script>
+  @yield('script')	
 
 </body>
 </html>

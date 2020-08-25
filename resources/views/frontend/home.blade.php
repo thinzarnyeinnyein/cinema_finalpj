@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- Main Body -->
-	<div class="container my-3">
+	<div class="container my-5">
 		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -40,104 +40,23 @@
 		</div>
 	</div>
   <!-- Card -->
-  <div class="container my-4">
+  <div class="container my-5">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
+      @foreach($movies as $movie)
+      <div class="col-lg-3 col-md-3 col-sm-12 my-4 card_change">
         <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
+          <img src="{{asset($movie->photo)}}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
+            {{-- <p>{{asset($movie->name)}}</p> --}}
+            <h5 class="card-title">{{asset($movie->name)}}</h5>
+            {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+            <a href="" class="btn btn-primary">Book Ticket</a>
           </div>
         </div>
 
         
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 my-3">
-        <div class="card">
-          <img src="images/1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Book Ticket</a>
-          </div>
-        </div>
-
-        
-      </div>
+      @endforeach
       
     </div>
     

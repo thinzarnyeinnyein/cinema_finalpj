@@ -15,7 +15,23 @@ class CreateScheduleTable extends Migration
     {
         Schema::create('schedule', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('movie_id');
+            $table->unsignedBigInteger('theater_id');
+            $table->date('date');
+            $table->time('time');
+
             $table->timestamps();
+
+            $table->foreign('movie_id')
+                ->references('id')
+                ->on('movies')
+                ->onDelete('cascade');
+
+            $table->foreign('theater_id')
+                ->references('id')
+                ->on('theaters')
+                ->onDelete('cascade');
+            
         });
     }
 

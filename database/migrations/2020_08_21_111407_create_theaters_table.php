@@ -15,6 +15,8 @@ class CreateTheatersTable extends Migration
     {
         Schema::create('theaters', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('no_of_seat');
             $table->timestamps();
         });
     }
