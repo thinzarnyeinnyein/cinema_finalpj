@@ -9,15 +9,12 @@
 	font-family: "great";
 	font-size: 24px;
 }
-<<<<<<< HEAD
-=======
 .screen{
 	padding: 60px 460px;
 	text-align: center;
 	font-size: 24px;
 
 }
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
 
 @font-face{
 
@@ -26,17 +23,13 @@
 }
 
 .foot_color{
-<<<<<<< HEAD
 	
 	background-image: linear-gradient(to right, #04091f, #030724, #051c7d);
-=======
 	background-color: #21294a;
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
 }
 .foot_text{
 	color: white;
 }
-<<<<<<< HEAD
 
 .linerarg{
 	
@@ -46,7 +39,6 @@
 
 
 
-=======
 a.change_color{
 	padding: 30px 30px;
 	text-align: center;
@@ -54,7 +46,6 @@ a.change_color{
 	margin: 4px 2px;
 	cursor: pointer;
 }
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
 /*payment*/
 .pay{
 	color: #fff;
@@ -71,10 +62,9 @@ a.change_color{
 	color: #c98d2c;
 	transform: translate(7px,-7px);
 	transition-duration: .5s;
-}
-<<<<<<< HEAD
 
-=======
+}
+
 .linerarg{
 	
 	background-image: linear-gradient(to right, #04091f, #030724, #051c7d);
@@ -161,4 +151,79 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 }
->>>>>>> dfac48c47af96012cc0668d0892508838daa56dd
+
+/*about*/
+
+
+.abouts{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
+	flex-wrap: space-around;
+	width: 1000px;
+	transform-style: preserve-3d;
+}
+.abouts .box{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin:20px 0;
+	perspective: 1000px;
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+
+.abouts .box:hover .imgBx{
+	transform: rotateX(-90deg);
+	opacity: 0;
+	transition-delay: 0.2s;
+}
+
+.abouts .box .imgBx{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+}
+.abouts .box .imgBx img{
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+}
+.abouts .box .contentBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 90%;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: 40px;
+	transform-origin: bottom;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(90deg);
+	opacity: 0;
+	color: #fff;
+}
+.abouts .box:hover .contentBx{
+	transform: rotateX(0deg);
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+.box{
+	pointer: cursor;
+}

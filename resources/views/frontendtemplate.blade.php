@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-	<title></title>
-	<link rel="icon"  href="images/logo1.png">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="{{asset('frontend/css/style.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('frontend/bootstrap/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/fontawesome/css/all.min.css')}}">
-	<scipt rel="stylesheet" type="text/css" href="{{asset('frontend/fontawesome/js/all.min.js')}}"></scipt>
-</head>
-<body class="linerarg">
-	<!-- Navagitation -->
-	<nav class="navbar navbar-expand-lg navcolor sticky-top">
-		<a class="navbar-brand" href="index.html">
-			<img src="images/logo1.png" width="50" height="50">
-
 <html lang="en">
 <head>
 	<title></title>
@@ -45,21 +26,6 @@
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-
-					<a class="nav-link txtcolor" href="index.html"><b>Home</b></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link txtcolor" href="#"><b>Seat</b></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link txtcolor" href="booking.html"><b>Booking</b></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link txtcolor" href=""><b>About</b></a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<a class="nav-link txtcolor" href="#">
 
 					<a class="nav-link txtcolor" href="{{route('homepage')}}"><b>Home</b></a>
 				</li>
